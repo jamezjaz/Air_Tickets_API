@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
   skip_before_action :authenticate_request, only: %i[login register]
 
+  def index
+    render json: User.all
+  end
+
   def login
     authenticate params[:email], params[:password]
   end
