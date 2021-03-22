@@ -28,6 +28,9 @@ gem 'rack-cors', :require => 'rack/cors'
 # Ruby linter
 gem 'rubocop', '~>0.81.0'
 
+# Simple_Command tool for user authentication
+gem 'simple_command'
+
 # Encoding and decoding user data with JWT
 gem 'jwt'
 
