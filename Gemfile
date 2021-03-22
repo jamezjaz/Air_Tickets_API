@@ -37,6 +37,9 @@ gem 'simple_command'
 # Encoding and decoding user data with JWT
 gem 'jwt'
 
+# Hirb tool for awesome pg db display on the console
+gem 'hirb'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

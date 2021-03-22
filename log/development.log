@@ -86,3 +86,4 @@ Migrating to CreateUsers (20210322115112)
   [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Jamez Jaz"], ["email", "jamezjaz@gmail.com"], ["password_digest", "$2a$12$mKPgX00/v.KZPuRgEVMe3OksAcVRrD9.0q.mVwwQQrHkaJjIAFgdO"], ["created_at", "2021-03-22 13:38:43.759995"], ["updated_at", "2021-03-22 13:38:43.759995"]]
   [1m[36mTRANSACTION (15.7ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
