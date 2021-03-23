@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   #Validations
-  has_many airlines
+  has_many :airlines
 
   validates_presence_of :name, :email, :password_digest
   validates :email, uniqueness: true

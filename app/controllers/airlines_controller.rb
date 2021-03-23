@@ -1,6 +1,7 @@
 class AirlinesController < ApplicationController
   def index
-    render json: Airline.all
+    airline = Airline.all
+    render json: airline, status: 201
   end
 
   def show
@@ -25,6 +26,6 @@ class AirlinesController < ApplicationController
   private
 
   def airline_params
-    params.require(:airline).permit(:name, :price, :location, :description, :image)
+    params.require(:airline).permit(:name, :price, :location, :description, :image, :user_id)
   end
 end
