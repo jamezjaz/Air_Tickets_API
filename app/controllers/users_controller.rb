@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  skip_before_action :authenticate_request, only: %i[login register]
+  before_action :authenticate_request, except: %i[login register]
 
   def index
     render json: User.all

@@ -2533,3 +2533,283 @@ Processing by AirlinesController#index as HTML
 Completed 201 Created in 6ms (Views: 4.7ms | ActiveRecord: 0.7ms | Allocations: 1152)
 
 
+Started GET "/airlines" for ::1 at 2021-03-23 08:04:13 -0500
+  [1m[35m (53.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (64.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 325ms (Views: 93.6ms | ActiveRecord: 98.0ms | Allocations: 9170)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 08:05:50 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 34ms (Views: 16.6ms | ActiveRecord: 5.7ms | Allocations: 9166)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 08:10:23 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 56ms (Views: 54.6ms | ActiveRecord: 0.4ms | Allocations: 1174)
+
+
+Started DELETE "/" for ::1 at 2021-03-23 08:11:48 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-23 08:12:00 -0500
+Started POST "/auth/login" for ::1 at 2021-03-23 08:28:54 -0500
+Started GET "/airlines" for ::1 at 2021-03-23 08:28:56 -0500
+  [1m[35m (142.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#index as HTML
+  
+ArgumentError (Before process_action callback :authenticate_request has not been defined):
+  
+app/controllers/users_controller.rb:2:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+  [1m[36mAirline Load (66.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 1201ms (Views: 44.0ms | ActiveRecord: 232.9ms | Allocations: 115599)
+
+
+Started POST "/auth/login" for ::1 at 2021-03-23 08:42:14 -0500
+Started GET "/airlines" for ::1 at 2021-03-23 08:42:14 -0500
+Processing by AirlinesController#index as HTML
+  
+ArgumentError (Before process_action callback :authenticate_request has not been defined):
+  
+app/controllers/users_controller.rb:2:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+  [1m[36mAirline Load (425.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 4158ms (Views: 4156.8ms | ActiveRecord: 2767.8ms | Allocations: 97310)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 08:42:58 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.0ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 9ms (Views: 6.7ms | ActiveRecord: 1.0ms | Allocations: 1152)
+
+
+Started DELETE "/" for ::1 at 2021-03-23 08:43:13 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-23 08:46:08 -0500
+  
+ArgumentError (Before process_action callback :authenticate_request has not been defined):
+  
+app/controllers/users_controller.rb:2:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/airlines" for ::1 at 2021-03-23 08:46:08 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 5.7ms | ActiveRecord: 0.5ms | Allocations: 1151)
+
+
+Started POST "/auth/login" for ::1 at 2021-03-23 08:46:56 -0500
+  
+ArgumentError (Before process_action callback :authenticate_request has not been defined):
+  
+app/controllers/users_controller.rb:2:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/airlines" for ::1 at 2021-03-23 08:46:56 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 3943)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 08:47:57 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.5ms | ActiveRecord: 0.5ms | Allocations: 1169)
+
+
+Started DELETE "/" for ::1 at 2021-03-23 08:48:01 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-23 08:48:26 -0500
+  
+ArgumentError (Before process_action callback :authenticate_request has not been defined):
+  
+app/controllers/users_controller.rb:2:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/airlines" for ::1 at 2021-03-23 08:48:26 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 5ms (Views: 4.5ms | ActiveRecord: 0.5ms | Allocations: 2743)
+
+
+Started DELETE "/" for ::1 at 2021-03-23 08:48:35 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-23 08:51:25 -0500
+Started GET "/airlines" for ::1 at 2021-03-23 08:51:25 -0500
+Processing by AirlinesController#index as HTML
+  
+ArgumentError (Before process_action callback :authenticate_request has not been defined):
+  
+app/controllers/users_controller.rb:2:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+  [1m[36mAirline Load (1876.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 2744ms (Views: 866.7ms | ActiveRecord: 1876.1ms | Allocations: 60781)
+
+
+Started DELETE "/" for ::1 at 2021-03-23 08:53:49 -0500
+  [1m[35m (21.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-23 08:54:06 -0500
+Started POST "/auth/login" for ::1 at 2021-03-23 09:08:08 -0500
+Started GET "/airlines" for ::1 at 2021-03-23 09:08:09 -0500
+  [1m[35m (16.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#index as HTML
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+  [1m[36mAirline Load (110.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+  [1m[36mUser Load (125.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 201 Created in 748ms (Views: 27.7ms | ActiveRecord: 364.0ms | Allocations: 14265)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 983ms (Views: 0.2ms | ActiveRecord: 321.0ms | Allocations: 10480)
+
+
+Started DELETE "/" for ::1 at 2021-03-23 09:10:00 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-23 09:10:12 -0500
+Started GET "/airlines" for ::1 at 2021-03-23 09:13:00 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 90ms (Views: 27.4ms | ActiveRecord: 7.6ms | Allocations: 9166)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 09:13:01 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 5.8ms | ActiveRecord: 0.5ms | Allocations: 1152)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 09:13:35 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 9ms (Views: 7.5ms | ActiveRecord: 0.9ms | Allocations: 1199)
+
+
+Started POST "/auth/login" for ::1 at 2021-03-23 09:13:35 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 663ms (Views: 0.2ms | ActiveRecord: 7.5ms | Allocations: 4385)
+
+
+Started DELETE "/" for ::1 at 2021-03-23 09:14:00 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-23 09:14:11 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"gozmok1@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"gozmok1@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "gozmok1@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 401 Unauthorized in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 542)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 09:14:11 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.0ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 5.3ms | ActiveRecord: 1.0ms | Allocations: 1152)
+
+
+Started DELETE "/" for ::1 at 2021-03-23 09:14:15 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-23 09:14:29 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+Started GET "/airlines" for ::1 at 2021-03-23 09:14:29 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 624ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 2197)
+
+
+  [1m[36mAirline Load (0.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 636ms (Views: 330.4ms | ActiveRecord: 304.7ms | Allocations: 4565)
+
+
+Started DELETE "/" for ::1 at 2021-03-23 09:14:59 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-23 09:15:09 -0500
+Started GET "/airlines" for ::1 at 2021-03-23 09:16:25 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 43ms (Views: 24.2ms | ActiveRecord: 7.0ms | Allocations: 9166)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 09:16:25 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 5ms (Views: 4.4ms | ActiveRecord: 0.4ms | Allocations: 1152)
+
+
+Started DELETE "/" for ::1 at 2021-03-23 09:16:33 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-23 09:16:43 -0500
+  
+ArgumentError (Before process_action callback :authenticate_request has not been defined):
+  
+app/controllers/users_controller.rb:2:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/airlines" for ::1 at 2021-03-23 09:16:43 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (31.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 160ms (Views: 128.0ms | ActiveRecord: 31.4ms | Allocations: 10048)
+
+
+Started DELETE "/" for ::1 at 2021-03-23 09:17:07 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-23 09:17:17 -0500
