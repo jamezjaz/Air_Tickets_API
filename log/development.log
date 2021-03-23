@@ -2813,3 +2813,536 @@ Started DELETE "/" for ::1 at 2021-03-23 09:17:07 -0500
 ActionController::RoutingError (No route matches [DELETE] "/"):
   
 Started POST "/auth/login" for ::1 at 2021-03-23 09:17:17 -0500
+Started GET "/airlines/" for ::1 at 2021-03-23 10:59:04 -0500
+  [1m[35m (253.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#index as */*
+  Parameters: {"airline"=>{}}
+  [1m[36mAirline Load (38.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 345ms (Views: 17.4ms | ActiveRecord: 282.9ms | Allocations: 7001)
+
+
+Started GET "/airlines/3" for ::1 at 2021-03-23 10:59:25 -0500
+Processing by AirlinesController#show as */*
+  Parameters: {"id"=>"3", "airline"=>{}}
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.7ms | Allocations: 1492)
+
+
+  
+NoMethodError (undefined method `error' for nil:NilClass):
+  
+app/controllers/airlines_controller.rb:12:in `show'
+Started GET "/airlines/1" for ::1 at 2021-03-23 11:01:38 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#show as */*
+  Parameters: {"id"=>"1", "airline"=>{}}
+  [1m[36mAirline Load (0.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 201 Created in 72ms (Views: 0.8ms | ActiveRecord: 22.7ms | Allocations: 6900)
+
+
+Started GET "/airlines/2" for ::1 at 2021-03-23 11:01:55 -0500
+Processing by AirlinesController#show as */*
+  Parameters: {"id"=>"2", "airline"=>{}}
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 201 Created in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 661)
+
+
+Started GET "/airlines/4" for ::1 at 2021-03-23 11:02:05 -0500
+Processing by AirlinesController#show as */*
+  Parameters: {"id"=>"4", "airline"=>{}}
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms | Allocations: 1069)
+
+
+  
+NoMethodError (undefined method `error' for nil:NilClass):
+  
+app/controllers/airlines_controller.rb:12:in `show'
+Started GET "/airlines/2" for ::1 at 2021-03-23 11:02:12 -0500
+Processing by AirlinesController#show as */*
+  Parameters: {"id"=>"2", "airline"=>{}}
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 201 Created in 10ms (Views: 0.9ms | ActiveRecord: 0.4ms | Allocations: 661)
+
+
+Started GET "/airlines/0" for ::1 at 2021-03-23 11:02:17 -0500
+Processing by AirlinesController#show as */*
+  Parameters: {"id"=>"0", "airline"=>{}}
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms | Allocations: 1056)
+
+
+  
+NoMethodError (undefined method `error' for nil:NilClass):
+  
+app/controllers/airlines_controller.rb:12:in `show'
+Started GET "/airlines/1" for ::1 at 2021-03-23 11:02:23 -0500
+Processing by AirlinesController#show as */*
+  Parameters: {"id"=>"1", "airline"=>{}}
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 201 Created in 4ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 640)
+
+
+Started POST "/auth/login" for ::1 at 2021-03-23 11:03:02 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+  [1m[36mUser Load (58.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Started GET "/airlines" for ::1 at 2021-03-23 11:03:03 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 875ms (Views: 0.4ms | ActiveRecord: 66.0ms | Allocations: 5161)
+
+
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 432ms (Views: 60.0ms | ActiveRecord: 371.3ms | Allocations: 4264)
+
+
+Started DELETE "/" for ::1 at 2021-03-23 11:15:29 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-23 11:15:49 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+Started GET "/airlines" for ::1 at 2021-03-23 11:15:50 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (17.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  [1m[36mUser Load (17.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 201 Created in 472ms (Views: 470.7ms | ActiveRecord: 167.7ms | Allocations: 5365)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 1287ms (Views: 0.2ms | ActiveRecord: 168.2ms | Allocations: 7243)
+
+
+Started GET "/airlines/id" for ::1 at 2021-03-23 11:15:55 -0500
+Processing by AirlinesController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 1105)
+
+
+  
+NoMethodError (undefined method `error' for nil:NilClass):
+  
+app/controllers/airlines_controller.rb:12:in `show'
+Started GET "/airlines/:id" for ::1 at 2021-03-23 11:17:05 -0500
+Processing by AirlinesController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms | Allocations: 1033)
+
+
+  
+NoMethodError (undefined method `error' for nil:NilClass):
+  
+app/controllers/airlines_controller.rb:12:in `show'
+Started POST "/auth/login" for ::1 at 2021-03-23 11:19:31 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Started GET "/airlines" for ::1 at 2021-03-23 11:19:31 -0500
+Completed 200 OK in 605ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1495)
+
+
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms | Allocations: 1154)
+
+
+Started GET "/airlines/[object%20Object],[object%20Object],[object%20Object],[object%20Object]" for ::1 at 2021-03-23 11:19:34 -0500
+Processing by AirlinesController#show as HTML
+  Parameters: {"id"=>"[object Object],[object Object],[object Object],[object Object]"}
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms | Allocations: 1033)
+
+
+  
+NoMethodError (undefined method `error' for nil:NilClass):
+  
+app/controllers/airlines_controller.rb:12:in `show'
+Started GET "/airlines/[object%20Object],[object%20Object],[object%20Object],[object%20Object]" for ::1 at 2021-03-23 11:22:38 -0500
+Processing by AirlinesController#show as HTML
+  Parameters: {"id"=>"[object Object],[object Object],[object Object],[object Object]"}
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms | Allocations: 1034)
+
+
+  
+NoMethodError (undefined method `error' for nil:NilClass):
+  
+app/controllers/airlines_controller.rb:12:in `show'
+Started GET "/airlines/[object%20Object],[object%20Object],[object%20Object],[object%20Object]/airlines/[object%20Object],[object%20Object],[object%20Object],[object%20Object]" for ::1 at 2021-03-23 11:23:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/airlines/[object%20Object],[object%20Object],[object%20Object],[object%20Object]/airlines/[object%20Object],[object%20Object],[object%20Object],[object%20Object]"):
+  
+Started GET "/airlines/[object%20Object],[object%20Object],[object%20Object],[object%20Object]" for ::1 at 2021-03-23 11:23:33 -0500
+Processing by AirlinesController#show as HTML
+  Parameters: {"id"=>"[object Object],[object Object],[object Object],[object Object]"}
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms | Allocations: 1033)
+
+
+  
+NoMethodError (undefined method `error' for nil:NilClass):
+  
+app/controllers/airlines_controller.rb:12:in `show'
+Started POST "/auth/login" for ::1 at 2021-03-23 11:24:01 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+Started GET "/airlines" for ::1 at 2021-03-23 11:24:01 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 609ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 2047)
+
+
+  [1m[36mAirline Load (0.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 619ms (Views: 610.9ms | ActiveRecord: 8.1ms | Allocations: 4559)
+
+
+Started GET "/airlines/[object%20Object],[object%20Object],[object%20Object],[object%20Object]" for ::1 at 2021-03-23 11:24:04 -0500
+Processing by AirlinesController#show as HTML
+  Parameters: {"id"=>"[object Object],[object Object],[object Object],[object Object]"}
+  [1m[36mAirline Load (7.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 8.3ms | Allocations: 1060)
+
+
+  
+NoMethodError (undefined method `error' for nil:NilClass):
+  
+app/controllers/airlines_controller.rb:12:in `show'
+Started POST "/auth/login" for ::1 at 2021-03-23 11:25:44 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 588ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 1256)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 11:25:45 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 9ms (Views: 8.4ms | ActiveRecord: 0.4ms | Allocations: 1152)
+
+
+Started GET "/airlines/[object%20Object],[object%20Object],[object%20Object],[object%20Object]" for ::1 at 2021-03-23 11:25:47 -0500
+Processing by AirlinesController#show as HTML
+  Parameters: {"id"=>"[object Object],[object Object],[object Object],[object Object]"}
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms | Allocations: 1035)
+
+
+  
+NoMethodError (undefined method `error' for nil:NilClass):
+  
+app/controllers/airlines_controller.rb:12:in `show'
+Started POST "/auth/login" for ::1 at 2021-03-23 11:27:07 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 606ms (Views: 0.2ms | ActiveRecord: 1.7ms | Allocations: 1253)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 11:27:07 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 1152)
+
+
+Started GET "/airlines/[object%20Object],[object%20Object],[object%20Object],[object%20Object]" for ::1 at 2021-03-23 11:33:32 -0500
+Processing by AirlinesController#show as HTML
+  Parameters: {"id"=>"[object Object],[object Object],[object Object],[object Object]"}
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 22.8ms | Allocations: 3182)
+
+
+  
+NoMethodError (undefined method `error' for nil:NilClass):
+  
+app/controllers/airlines_controller.rb:12:in `show'
+Started GET "/airlines/[object%20Object],[object%20Object],[object%20Object],[object%20Object]" for ::1 at 2021-03-23 11:35:22 -0500
+Processing by AirlinesController#show as HTML
+  Parameters: {"id"=>"[object Object],[object Object],[object Object],[object Object]"}
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms | Allocations: 1033)
+
+
+  
+NoMethodError (undefined method `error' for nil:NilClass):
+  
+app/controllers/airlines_controller.rb:12:in `show'
+Started GET "/airlines" for ::1 at 2021-03-23 11:35:41 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 196ms (Views: 194.3ms | ActiveRecord: 1.3ms | Allocations: 1151)
+
+
+Started GET "/airlines/[object%20Object],[object%20Object],[object%20Object],[object%20Object]" for ::1 at 2021-03-23 11:35:42 -0500
+Processing by AirlinesController#show as HTML
+  Parameters: {"id"=>"[object Object],[object Object],[object Object],[object Object]"}
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms | Allocations: 1034)
+
+
+  
+NoMethodError (undefined method `error' for nil:NilClass):
+  
+app/controllers/airlines_controller.rb:12:in `show'
+Started GET "/airlines/" for ::1 at 2021-03-23 11:36:52 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 25ms (Views: 24.3ms | ActiveRecord: 0.5ms | Allocations: 1151)
+
+
+Started GET "/airlines/" for ::1 at 2021-03-23 11:37:05 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 5ms (Views: 3.3ms | ActiveRecord: 0.9ms | Allocations: 1152)
+
+
+Started GET "/airlines/[object%20Object],[object%20Object],[object%20Object],[object%20Object]" for ::1 at 2021-03-23 11:37:14 -0500
+Processing by AirlinesController#show as HTML
+  Parameters: {"id"=>"[object Object],[object Object],[object Object],[object Object]"}
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms | Allocations: 1033)
+
+
+  
+NoMethodError (undefined method `error' for nil:NilClass):
+  
+app/controllers/airlines_controller.rb:12:in `show'
+Started POST "/airlines" for ::1 at 2021-03-23 12:04:12 -0500
+  [1m[35m (55.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#create as */*
+  Parameters: {"name"=>"Air Ontario", "price"=>"890.42", "location"=>"Ontario, Ca", "description"=>"Hello Air Ontario", "image"=>#<ActionDispatch::Http::UploadedFile:0x000055b5a6b66de8 @tempfile=#<Tempfile:/tmp/RackMultipart20210323-7594-1kwajtp.jpg>, @original_filename="air.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"air.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+Completed 404 Not Found in 283ms (Views: 1.1ms | ActiveRecord: 178.5ms | Allocations: 2468)
+
+
+Started POST "/airlines" for ::1 at 2021-03-23 12:05:14 -0500
+Processing by AirlinesController#create as */*
+  Parameters: {"name"=>"Air Ontario", "price"=>"890.42", "location"=>"Ontario, Ca", "description"=>"Hello Air Ontario", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fba0c0e2db0 @tempfile=#<Tempfile:/tmp/RackMultipart20210323-7594-dou068.jpg>, @original_filename="air.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"air.jpg\"\r\nContent-Type: image/jpeg\r\n">, "user_id"=>"2"}
+  [1m[36mUser Load (93.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:17:in `create'
+Completed 400 Bad Request in 2030ms (ActiveRecord: 135.1ms | Allocations: 13043)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: airline
+Did you mean?  action
+               location
+               controller
+               image):
+  
+app/controllers/airlines_controller.rb:29:in `airline_params'
+app/controllers/airlines_controller.rb:18:in `create'
+Started POST "/airlines" for ::1 at 2021-03-23 12:07:31 -0500
+  [1m[35m (9.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#create as */*
+  Parameters: {"name"=>"Air Ontario", "price"=>"890.42", "location"=>"Ontario, Ca", "description"=>"Hello Air Ontario", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f5cf12b15b0 @tempfile=#<Tempfile:/tmp/RackMultipart20210323-7817-1j813m2.jpg>, @original_filename="air.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"air.jpg\"\r\nContent-Type: image/jpeg\r\n">, "user_id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mAirline Create (299.7ms)[0m  [1m[32mINSERT INTO "airlines" ("name", "price", "location", "description", "image", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Air Ontario"], ["price", "890.42"], ["location", "Ontario, Ca"], ["description", "Hello Air Ontario"], ["image", "a5qu8siprc3ahx2nmqjb.jpg"], ["created_at", "2021-03-23 17:07:33.529098"], ["updated_at", "2021-03-23 17:07:33.529098"], ["user_id", 2]]
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (67.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mAirline Update All (11.0ms)[0m  [1m[33mUPDATE "airlines" SET "image" = $1 WHERE "airlines"."id" = $2[0m  [["image", "image/upload/v1616519260/a5qu8siprc3ahx2nmqjb.jpg"], ["id", 5]]
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+Completed 201 Created in 8481ms (Views: 1.2ms | ActiveRecord: 401.1ms | Allocations: 210811)
+
+
+Started POST "/auth/login" for ::1 at 2021-03-23 12:11:05 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+  [1m[36mUser Load (79.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 1530ms (Views: 0.7ms | ActiveRecord: 79.1ms | Allocations: 2166)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 12:11:08 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 34ms (Views: 32.2ms | ActiveRecord: 0.7ms | Allocations: 1652)
+
+
+  [1m[36mUser Load (19.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  [1m[36mAirline Load (0.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  [1m[36mAirline Destroy (68.6ms)[0m  [1m[31mDELETE FROM "airlines" WHERE (id < 5)[0m
+  [1m[36mAirline Load (0.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+Started GET "/airlines" for ::1 at 2021-03-23 12:30:59 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 313ms (Views: 111.2ms | ActiveRecord: 9.1ms | Allocations: 11537)
+
+
+Started POST "/airlines" for ::1 at 2021-03-23 12:42:06 -0500
+Processing by AirlinesController#create as */*
+  Parameters: {"name"=>"British Airways", "price"=>"1000", "location"=>"London, UK", "description"=>"Top airline in the UK, 2020", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000562fc15fd5d8 @tempfile=#<Tempfile:/tmp/RackMultipart20210323-8725-1sqovpt.jpg>, @original_filename="british-airways.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"british-airways.jpg\"\r\nContent-Type: image/jpeg\r\n">, "user_id"=>"1"}
+  [1m[36mUser Load (32.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mAirline Create (288.1ms)[0m  [1m[32mINSERT INTO "airlines" ("name", "price", "location", "description", "image", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "British Airways"], ["price", "1000.0"], ["location", "London, UK"], ["description", "Top airline in the UK, 2020"], ["image", "lxrytfjoyf73iw8wy4mi.jpg"], ["created_at", "2021-03-23 17:42:11.404139"], ["updated_at", "2021-03-23 17:42:11.404139"], ["user_id", 1]]
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (449.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mAirline Update All (79.3ms)[0m  [1m[33mUPDATE "airlines" SET "image" = $1 WHERE "airlines"."id" = $2[0m  [["image", "image/upload/v1616521347/lxrytfjoyf73iw8wy4mi.jpg"], ["id", 6]]
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+Completed 201 Created in 20619ms (Views: 2.1ms | ActiveRecord: 1696.6ms | Allocations: 158898)
+
+
+Started POST "/airlines" for ::1 at 2021-03-23 12:47:14 -0500
+Processing by AirlinesController#create as */*
+  Parameters: {"name"=>"Fly Emirates", "price"=>"970.42", "location"=>"Arsenal, UK", "description"=>"One of the best airlines in the world", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007ffbd424fb80 @tempfile=#<Tempfile:/tmp/RackMultipart20210323-8725-7lt73s.jpeg>, @original_filename="fly-emirates.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"fly-emirates.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "user_id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (32.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mAirline Create (72.2ms)[0m  [1m[32mINSERT INTO "airlines" ("name", "price", "location", "description", "image", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Fly Emirates"], ["price", "970.42"], ["location", "Arsenal, UK"], ["description", "One of the best airlines in the world"], ["image", "apjobqnqrhmrm9f2hrbl.jpg"], ["created_at", "2021-03-23 17:47:14.603411"], ["updated_at", "2021-03-23 17:47:14.603411"], ["user_id", 2]]
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (45.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mAirline Update All (67.4ms)[0m  [1m[33mUPDATE "airlines" SET "image" = $1 WHERE "airlines"."id" = $2[0m  [["image", "image/upload/v1616521635/apjobqnqrhmrm9f2hrbl.jpg"], ["id", 7]]
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+Completed 201 Created in 2024ms (Views: 35.4ms | ActiveRecord: 218.0ms | Allocations: 6471)
+
+
+Started POST "/airlines" for ::1 at 2021-03-23 12:52:23 -0500
+Processing by AirlinesController#create as */*
+  Parameters: {"name"=>"Nebraska Airlines", "price"=>"800", "location"=>"Nebraska, US", "description"=>"One of the best airlines in the world", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000562fc35d32e0 @tempfile=#<Tempfile:/tmp/RackMultipart20210323-8725-buv1kj.jpg>, @original_filename="nebraska-air.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"nebraska-air.jpg\"\r\nContent-Type: image/jpeg\r\n">, "user_id"=>"3"}
+  [1m[36mUser Load (116.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mAirline Create (119.9ms)[0m  [1m[32mINSERT INTO "airlines" ("name", "price", "location", "description", "image", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Nebraska Airlines"], ["price", "800.0"], ["location", "Nebraska, US"], ["description", "One of the best airlines in the world"], ["image", "jsrltkendx7qcrdecf2h.jpg"], ["created_at", "2021-03-23 17:52:26.148425"], ["updated_at", "2021-03-23 17:52:26.148425"], ["user_id", 3]]
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (318.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mAirline Update All (222.3ms)[0m  [1m[33mUPDATE "airlines" SET "image" = $1 WHERE "airlines"."id" = $2[0m  [["image", "image/upload/v1616521949/jsrltkendx7qcrdecf2h.jpg"], ["id", 8]]
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+Completed 201 Created in 5721ms (Views: 55.8ms | ActiveRecord: 778.3ms | Allocations: 6305)
+
+
+Started POST "/airlines" for ::1 at 2021-03-23 12:54:28 -0500
+Processing by AirlinesController#create as */*
+  Parameters: {"name"=>"NSW Airlines", "price"=>"1024.54", "location"=>"New South Wales, AU", "description"=>"One of the best airlines in the world", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000562fc0c7cd60 @tempfile=#<Tempfile:/tmp/RackMultipart20210323-8725-1jcmpzn.jpg>, @original_filename="air-nsw.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"air-nsw.jpg\"\r\nContent-Type: image/jpeg\r\n">, "user_id"=>"4"}
+  [1m[36mUser Load (127.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mAirline Create (58.7ms)[0m  [1m[32mINSERT INTO "airlines" ("name", "price", "location", "description", "image", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "NSW Airlines"], ["price", "1024.54"], ["location", "New South Wales, AU"], ["description", "One of the best airlines in the world"], ["image", "rfmu20mcrjxkf5dzkdye.jpg"], ["created_at", "2021-03-23 17:54:32.232955"], ["updated_at", "2021-03-23 17:54:32.232955"], ["user_id", 4]]
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (469.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mAirline Update All (410.5ms)[0m  [1m[33mUPDATE "airlines" SET "image" = $1 WHERE "airlines"."id" = $2[0m  [["image", "image/upload/v1616522078/rfmu20mcrjxkf5dzkdye.jpg"], ["id", 9]]
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+Completed 201 Created in 9013ms (Views: 98.9ms | ActiveRecord: 1066.7ms | Allocations: 7211)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 12:54:57 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 81ms (Views: 79.1ms | ActiveRecord: 0.5ms | Allocations: 2158)
+
+
+Started POST "/airlines" for ::1 at 2021-03-23 12:58:00 -0500
+Processing by AirlinesController#create as */*
+  Parameters: {"name"=>"Air China", "price"=>"760.45", "location"=>"Beijing, China", "description"=>"One of the best airlines in Asia", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007ffbd053b370 @tempfile=#<Tempfile:/tmp/RackMultipart20210323-8725-1y1oeqj.jpg>, @original_filename="air-china.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"air-china.jpg\"\r\nContent-Type: image/jpeg\r\n">, "user_id"=>"4"}
+  [1m[36mUser Load (548.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (30.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mAirline Create (554.6ms)[0m  [1m[32mINSERT INTO "airlines" ("name", "price", "location", "description", "image", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Air China"], ["price", "760.45"], ["location", "Beijing, China"], ["description", "One of the best airlines in Asia"], ["image", "d63qbshzqjxpqaacrgty.jpg"], ["created_at", "2021-03-23 17:58:03.179971"], ["updated_at", "2021-03-23 17:58:03.179971"], ["user_id", 4]]
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (162.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+  [1m[36mAirline Update All (108.9ms)[0m  [1m[33mUPDATE "airlines" SET "image" = $1 WHERE "airlines"."id" = $2[0m  [["image", "image/upload/v1616522299/d63qbshzqjxpqaacrgty.jpg"], ["id", 10]]
+  ↳ app/controllers/airlines_controller.rb:18:in `create'
+Completed 201 Created in 19597ms (Views: 35.7ms | ActiveRecord: 1404.9ms | Allocations: 9044)
+
+
+  [1m[36mUser Load (183.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAirline Create (826.1ms)[0m  [1m[32mINSERT INTO "airlines" ("name", "price", "location", "description", "image", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Air Peace"], ["price", "780.0"], ["location", "Enugu, Nigeria"], ["description", "One of the best airlines in Africa"], ["image", nil], ["created_at", "2021-03-23 18:02:18.283351"], ["updated_at", "2021-03-23 18:02:18.283351"], ["user_id", 5]]
+  [1m[36mTRANSACTION (448.8ms)[0m  [1m[35mCOMMIT[0m
+Started DELETE "/" for ::1 at 2021-03-23 13:02:41 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-23 13:02:57 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+Started GET "/airlines" for ::1 at 2021-03-23 13:02:57 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mUser Load (76.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 1896ms (Views: 0.5ms | ActiveRecord: 76.7ms | Allocations: 2845)
+
+
+  [1m[36mAirline Load (9.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 2533ms (Views: 1338.7ms | ActiveRecord: 1193.7ms | Allocations: 6219)
+
+
+  [1m[36mAirline Load (1.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" ORDER BY "airlines"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mAirline Destroy (69.8ms)[0m  [1m[31mDELETE FROM "airlines" WHERE "airlines"."id" = $1[0m  [["id", 11]]
+Started GET "/airlines" for ::1 at 2021-03-23 13:03:48 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.2ms | ActiveRecord: 0.7ms | Allocations: 2349)
+
+

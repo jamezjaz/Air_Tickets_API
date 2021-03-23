@@ -40,6 +40,10 @@ gem 'jwt'
 # Hirb tool for awesome pg db display on the console
 gem 'hirb'
 
+# Cloudinary and carrierwave gems for managing image and video uploads
+gem 'carrierwave'
+gem 'cloudinary'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
