@@ -28,12 +28,12 @@ class TicketsController < ApplicationController
 
   # POST /tickets
   def create
-    @ticket = Ticket.new(ticket_params)
+    ticket = Ticket.new(ticket_params)
 
-    if @ticket.save
-      redirect_to @ticket, notice: 'Ticket was successfully created.'
+    if ticket.save
+      render json: ticket.airline, status: 201, notice: 'Ticket was successfully created.'
     else
-      render :new
+      render json: ticket.errors, status: :unprocessable_entity
     end
   end
 
