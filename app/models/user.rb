@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   #Validations
   has_many :airlines
+  has_many :tickets
 
   validates_presence_of :name, :email, :password_digest, :username, length: { minimum: 3 }
   validates :email, uniqueness: true

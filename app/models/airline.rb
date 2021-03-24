@@ -1,5 +1,6 @@
 class Airline < ApplicationRecord
   belongs_to :user, optional: true
+  has_many :tickets
   mount_uploader :image, ImageUploader
 
   validates_presence_of :name

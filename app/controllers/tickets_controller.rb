@@ -3,11 +3,18 @@ class TicketsController < ApplicationController
 
   # GET /tickets
   def index
-    @tickets = Ticket.all
+    ticket = Ticket.all
+    render json: ticket, status: 201
   end
 
   # GET /tickets/1
   def show
+    ticket = Ticket.find_by(user_id: params[:id])
+    if ticket
+      render json: ticket.airline, status: 201
+    else
+      render json: ticket.error, status: 400
+    end
   end
 
   # GET /tickets/new
