@@ -3346,3 +3346,1506 @@ Processing by AirlinesController#index as HTML
 Completed 201 Created in 8ms (Views: 7.2ms | ActiveRecord: 0.7ms | Allocations: 2349)
 
 
+Started GET "/airlines" for ::1 at 2021-03-23 13:32:54 -0500
+  [1m[35m (54.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (361.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 1594ms (Views: 230.4ms | ActiveRecord: 493.5ms | Allocations: 13077)
+
+
+Started POST "/auth/login" for ::1 at 2021-03-23 13:33:16 -0500
+Started GET "/airlines" for ::1 at 2021-03-23 13:33:16 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (23.0ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 65ms (Views: 41.5ms | ActiveRecord: 23.0ms | Allocations: 2805)
+
+
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+  [1m[36mUser Load (72.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 1075ms (Views: 0.2ms | ActiveRecord: 77.6ms | Allocations: 4411)
+
+
+Started POST "/auth/login" for ::1 at 2021-03-23 13:45:05 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/airlines" for ::1 at 2021-03-23 13:45:06 -0500
+Processing by AirlinesController#index as HTML
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+  [1m[36mUser Load (13.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 623ms (Views: 0.2ms | ActiveRecord: 20.9ms | Allocations: 7849)
+
+
+Completed 201 Created in 853ms (Views: 63.9ms | ActiveRecord: 613.3ms | Allocations: 21566)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 13:52:02 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 931ms (Views: 930.6ms | ActiveRecord: 211.4ms | Allocations: 4451)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 13:55:56 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (21.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 229ms (Views: 206.8ms | ActiveRecord: 21.6ms | Allocations: 2370)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 13:56:01 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 6ms (Views: 5.5ms | ActiveRecord: 0.6ms | Allocations: 2370)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 13:59:27 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 18ms (Views: 17.0ms | ActiveRecord: 1.1ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:01:07 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.8ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:03:07 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 218ms (Views: 216.4ms | ActiveRecord: 1.4ms | Allocations: 2349)
+
+
+Started POST "/auth/login" for ::1 at 2021-03-23 14:03:36 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+Started GET "/airlines" for ::1 at 2021-03-23 14:03:36 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mUser Load (151.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 1002ms (Views: 0.3ms | ActiveRecord: 173.8ms | Allocations: 1920)
+
+
+  [1m[36mAirline Load (1.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 1112ms (Views: 1010.3ms | ActiveRecord: 101.2ms | Allocations: 5709)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:04:08 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.0ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 25ms (Views: 23.7ms | ActiveRecord: 1.0ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:04:11 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.0ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 16ms (Views: 14.6ms | ActiveRecord: 1.0ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:05:58 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 9ms (Views: 8.3ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:06:02 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 72ms (Views: 71.0ms | ActiveRecord: 0.5ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:06:37 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 14ms (Views: 12.6ms | ActiveRecord: 1.1ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:06:40 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:08:43 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 14ms (Views: 13.4ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:08:46 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 9ms (Views: 8.2ms | ActiveRecord: 0.5ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:11:38 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 16ms (Views: 15.2ms | ActiveRecord: 0.6ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:11:41 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 24ms (Views: 21.8ms | ActiveRecord: 1.6ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:13:09 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 18ms (Views: 16.4ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:13:41 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 56ms (Views: 54.5ms | ActiveRecord: 0.6ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:14:48 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 11ms (Views: 10.4ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:14:51 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:17:07 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 18ms (Views: 16.3ms | ActiveRecord: 0.5ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:17:15 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 13ms (Views: 11.8ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:17:54 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 23ms (Views: 22.4ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:17:56 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 17ms (Views: 15.9ms | ActiveRecord: 0.7ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:18:09 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 20ms (Views: 18.8ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:23:16 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 15ms (Views: 14.2ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:23:38 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 14ms (Views: 12.5ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:23:40 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 20ms (Views: 17.2ms | ActiveRecord: 1.3ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:25:09 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 15ms (Views: 14.3ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:25:12 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 15ms (Views: 13.6ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:27:52 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 22ms (Views: 21.0ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:27:55 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 15ms (Views: 14.3ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:29:28 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (3.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 15ms (Views: 10.7ms | ActiveRecord: 3.7ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:29:31 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 5.7ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:31:14 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 29ms (Views: 27.9ms | ActiveRecord: 0.8ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:31:18 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 16ms (Views: 15.0ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:47:19 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (18.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 2621ms (Views: 2620.6ms | ActiveRecord: 595.5ms | Allocations: 4476)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:48:43 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 193ms (Views: 192.0ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:48:56 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.3ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:51:53 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (63.0ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 1060ms (Views: 995.8ms | ActiveRecord: 63.0ms | Allocations: 2349)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:51:59 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 6.5ms | ActiveRecord: 0.5ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:52:09 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.4ms | ActiveRecord: 0.5ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:52:43 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.5ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:52:50 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:52:58 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 11ms (Views: 9.7ms | ActiveRecord: 0.9ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:53:42 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 10ms (Views: 9.7ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:53:44 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 9ms (Views: 8.5ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:54:36 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 9ms (Views: 7.9ms | ActiveRecord: 0.5ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:54:37 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 10ms (Views: 8.9ms | ActiveRecord: 0.7ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:55:06 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 11ms (Views: 9.8ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:55:08 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 6.7ms | ActiveRecord: 0.6ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:56:46 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 9ms (Views: 8.2ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:57:06 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 10ms (Views: 9.0ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:58:04 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 6.4ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:58:40 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 11ms (Views: 9.9ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:58:42 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 5ms (Views: 4.7ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:58:55 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:58:58 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 9ms (Views: 7.6ms | ActiveRecord: 0.7ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:59:03 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:59:29 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 10ms (Views: 9.3ms | ActiveRecord: 0.3ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:59:31 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 10ms (Views: 8.6ms | ActiveRecord: 1.3ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 14:59:36 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 10ms (Views: 9.3ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:00:49 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 13ms (Views: 11.7ms | ActiveRecord: 0.5ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:00:51 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 11ms (Views: 10.5ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:01:32 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 13ms (Views: 12.3ms | ActiveRecord: 0.6ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:01:35 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 10ms (Views: 8.6ms | ActiveRecord: 0.8ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:01:51 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 11ms (Views: 9.8ms | ActiveRecord: 0.5ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:01:53 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.7ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:01:59 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 6.4ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:02:02 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 6.6ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:02:05 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 6.4ms | ActiveRecord: 0.6ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:02:52 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 18ms (Views: 9.9ms | ActiveRecord: 0.6ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:02:55 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 6.5ms | ActiveRecord: 0.3ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:02:58 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 10ms (Views: 9.3ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:03:35 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.2ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:03:37 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.7ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:04:27 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 5.8ms | ActiveRecord: 0.9ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:04:32 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 9ms (Views: 8.1ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:05:32 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.2ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:05:34 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 6ms (Views: 4.9ms | ActiveRecord: 0.3ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:06:17 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:06:19 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 6.7ms | ActiveRecord: 0.6ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:06:24 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.2ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:07:06 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:07:08 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 6.2ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:07:44 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 6ms (Views: 5.5ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:09:04 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 9ms (Views: 7.7ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:17:02 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 1279ms (Views: 1278.7ms | ActiveRecord: 415.6ms | Allocations: 4474)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:17:03 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 5.9ms | ActiveRecord: 0.7ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:17:33 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 13ms (Views: 12.4ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:17:35 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 6.4ms | ActiveRecord: 0.3ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:17:59 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 13ms (Views: 12.6ms | ActiveRecord: 0.3ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:18:01 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 6.7ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:20:59 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 15ms (Views: 13.8ms | ActiveRecord: 0.6ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:21:01 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 15ms (Views: 13.7ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:21:40 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 10ms (Views: 7.8ms | ActiveRecord: 0.8ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:21:42 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:22:03 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 6.9ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:26:02 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 12ms (Views: 11.0ms | ActiveRecord: 0.5ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:27:31 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 11ms (Views: 9.9ms | ActiveRecord: 0.7ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:36:42 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 409ms (Views: 409.1ms | ActiveRecord: 64.5ms | Allocations: 4428)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:40:36 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 15ms (Views: 14.3ms | ActiveRecord: 0.5ms | Allocations: 2348)
+
+
+Started DELETE "/" for ::1 at 2021-03-23 15:46:22 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/register" for ::1 at 2021-03-23 15:57:42 -0500
+Started GET "/airlines" for ::1 at 2021-03-23 15:57:42 -0500
+Processing by AirlinesController#index as HTML
+Processing by UsersController#register as HTML
+  Parameters: {"name"=>"Mark Arkinson", "email"=>"arkinson@gmail.uk", "password"=>"[FILTERED]", "user"=>{"name"=>"Mark Arkinson", "email"=>"arkinson@gmail.uk"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mAirline Load (256.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  [1m[36mTRANSACTION (17.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+  ↳ app/controllers/users_controller.rb:19:in `register'
+Completed 201 Created in 2592ms (Views: 2581.9ms | ActiveRecord: 886.6ms | Allocations: 7597)
+
+
+  [1m[36mUser Exists? (121.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "arkinson@gmail.uk"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `register'
+  [1m[36mUser Create (144.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mark Arkinson"], ["email", "arkinson@gmail.uk"], ["password_digest", "$2a$12$m3n7MzMf20Qs3Vsiz3bNVOwh4MecGa/S2nwJ1PE9ssAqmRWYawTMq"], ["created_at", "2021-03-23 20:57:45.481267"], ["updated_at", "2021-03-23 20:57:45.481267"]]
+  ↳ app/controllers/users_controller.rb:19:in `register'
+  [1m[36mTRANSACTION (92.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:19:in `register'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `register'
+  [1m[36mUser Exists? (12.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "arkinson@gmail.uk"], ["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `register'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:20:in `register'
+Completed 201 Created in 4003ms (Views: 0.4ms | ActiveRecord: 1060.7ms | Allocations: 11285)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:59:04 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 15ms (Views: 14.5ms | ActiveRecord: 0.6ms | Allocations: 2446)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 15:59:10 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 2348)
+
+
+Started DELETE "/" for ::1 at 2021-03-23 15:59:19 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-23 16:12:56 -0500
+Started GET "/airlines" for ::1 at 2021-03-23 16:12:56 -0500
+Processing by UsersController#login as HTML
+Processing by AirlinesController#index as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+  [1m[36mAirline Load (37.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 1920ms (Views: 1909.6ms | ActiveRecord: 654.4ms | Allocations: 6485)
+
+
+  [1m[36mUser Load (114.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 3597ms (Views: 45.0ms | ActiveRecord: 546.4ms | Allocations: 7553)
+
+
+Started DELETE "/" for ::1 at 2021-03-23 16:28:17 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-23 16:51:29 -0500
+Started GET "/airlines" for ::1 at 2021-03-23 16:51:29 -0500
+Processing by AirlinesController#index as HTML
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+  [1m[36mAirline Load (334.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  [1m[36mUser Load (81.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 10571ms (Views: 146.9ms | ActiveRecord: 1026.6ms | Allocations: 6014)
+
+
+Completed 201 Created in 11288ms (Views: 10128.5ms | ActiveRecord: 1880.9ms | Allocations: 7933)
+
+
+Started POST "/auth/login" for ::1 at 2021-03-23 17:38:17 -0500
+Started GET "/airlines" for ::1 at 2021-03-23 17:38:23 -0500
+  [1m[35m (154.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#index as HTML
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+  [1m[36mAirline Load (118.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+  [1m[36mUser Load (17.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 201 Created in 1048ms (Views: 575.7ms | ActiveRecord: 213.5ms | Allocations: 20433)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 1183ms (Views: 0.5ms | ActiveRecord: 154.2ms | Allocations: 13747)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 17:46:08 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8215ms (Views: 8121.7ms | ActiveRecord: 984.2ms | Allocations: 4470)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 17:46:29 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms | Allocations: 2370)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 17:46:38 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 6.7ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 17:50:51 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 16ms (Views: 13.5ms | ActiveRecord: 1.8ms | Allocations: 2370)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 17:55:38 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 11ms (Views: 9.2ms | ActiveRecord: 1.1ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 17:55:41 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.0ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 18ms (Views: 16.4ms | ActiveRecord: 1.0ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 18:01:30 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 604ms (Views: 603.8ms | ActiveRecord: 36.1ms | Allocations: 4428)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 18:01:32 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 6.3ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 18:16:32 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 5089ms (Views: 5088.3ms | ActiveRecord: 1386.7ms | Allocations: 4458)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 18:16:39 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 9ms (Views: 7.5ms | ActiveRecord: 0.6ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 18:18:50 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 13ms (Views: 12.1ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 18:18:52 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 13ms (Views: 12.3ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 18:32:44 -0500
+Processing by AirlinesController#index as HTML
+Started GET "/airlines/show" for ::1 at 2021-03-23 18:33:09 -0500
+Processing by AirlinesController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mAirline Load (536.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 50962ms (Views: 49918.3ms | ActiveRecord: 13006.5ms | Allocations: 7248)
+
+
+  [1m[36mAirline Load (0.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines" WHERE "airlines"."user_id" = $1 LIMIT $2[0m  [["user_id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/airlines_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 37060ms (ActiveRecord: 4806.8ms | Allocations: 7206)
+
+
+  
+NoMethodError (undefined method `error' for nil:NilClass):
+  
+app/controllers/airlines_controller.rb:12:in `show'
+Started POST "/auth/login" for ::1 at 2021-03-23 18:34:30 -0500
+Started GET "/airlines" for ::1 at 2021-03-23 18:34:31 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "user"=>{"email"=>""}}
+Processing by AirlinesController#index as HTML
+  [1m[36mUser Load (51.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 401 Unauthorized in 1137ms (Views: 14.4ms | ActiveRecord: 51.8ms | Allocations: 3082)
+
+
+  [1m[36mAirline Load (1.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 3943ms (Views: 2255.1ms | ActiveRecord: 1687.2ms | Allocations: 8540)
+
+
+Started POST "/auth/login" for ::1 at 2021-03-23 18:35:19 -0500
+Started GET "/airlines" for ::1 at 2021-03-23 18:35:19 -0500
+Processing by AirlinesController#index as HTML
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+  [1m[36mAirline Load (1.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 385ms (Views: 382.8ms | ActiveRecord: 1.5ms | Allocations: 2933)
+
+
+  [1m[36mUser Load (323.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 1289ms (Views: 0.8ms | ActiveRecord: 323.4ms | Allocations: 4578)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 18:52:13 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (5.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 1609ms (Views: 1607.3ms | ActiveRecord: 243.1ms | Allocations: 4450)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:01:00 -0500
+Processing by AirlinesController#index as HTML
+Started GET "/airlines" for ::1 at 2021-03-23 19:01:02 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (24.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  [1m[36mAirline Load (25.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 2587ms (Views: 2586.2ms | ActiveRecord: 643.7ms | Allocations: 7519)
+
+
+Completed 201 Created in 2038ms (Views: 2037.2ms | ActiveRecord: 664.7ms | Allocations: 8603)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:09:36 -0500
+Processing by AirlinesController#index as HTML
+Started GET "/airlines" for ::1 at 2021-03-23 19:09:38 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (42.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 782ms (Views: 781.9ms | ActiveRecord: 177.5ms | Allocations: 5311)
+
+
+  [1m[36mAirline Load (1.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 127ms (Views: 59.5ms | ActiveRecord: 66.7ms | Allocations: 7116)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:09:56 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 74ms (Views: 73.3ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:09:57 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 17ms (Views: 16.5ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:11:25 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 185ms (Views: 183.5ms | ActiveRecord: 0.6ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:17:22 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 737ms (Views: 736.3ms | ActiveRecord: 34.8ms | Allocations: 4429)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:17:34 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 27ms (Views: 25.9ms | ActiveRecord: 0.5ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:17:50 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 54ms (Views: 53.2ms | ActiveRecord: 0.3ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:21:12 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 95ms (Views: 68.2ms | ActiveRecord: 0.5ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:21:29 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.1ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 64ms (Views: 62.2ms | ActiveRecord: 1.1ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:21:58 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 139ms (Views: 138.4ms | ActiveRecord: 0.5ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:22:00 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 166ms (Views: 165.4ms | ActiveRecord: 0.3ms | Allocations: 2349)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:23:07 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 50ms (Views: 49.2ms | ActiveRecord: 0.5ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:32:08 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.6ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 924ms (Views: 911.6ms | ActiveRecord: 169.9ms | Allocations: 4432)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:32:22 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 147ms (Views: 145.6ms | ActiveRecord: 0.7ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:32:32 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (4.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 32ms (Views: 18.8ms | ActiveRecord: 4.9ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:32:57 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 39ms (Views: 37.1ms | ActiveRecord: 0.9ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:33:47 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (12.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 85ms (Views: 71.8ms | ActiveRecord: 12.8ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:34:02 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 42ms (Views: 41.3ms | ActiveRecord: 0.3ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:34:10 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.0ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 72ms (Views: 70.7ms | ActiveRecord: 1.0ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:40:58 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 129ms (Views: 128.6ms | ActiveRecord: 30.6ms | Allocations: 4449)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:41:42 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 1268ms (Views: 1267.0ms | ActiveRecord: 0.4ms | Allocations: 2350)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:41:48 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 6ms (Views: 5.1ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:42:05 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:42:15 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 16ms (Views: 14.8ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:42:16 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 8ms (Views: 7.1ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:42:19 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (66.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 208ms (Views: 140.9ms | ActiveRecord: 66.7ms | Allocations: 2352)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:42:29 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.7ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 6.3ms | ActiveRecord: 0.7ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:42:37 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 19ms (Views: 18.0ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:43:44 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 9ms (Views: 8.0ms | ActiveRecord: 0.3ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:43:59 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 13ms (Views: 12.2ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:44:26 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (10.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 54ms (Views: 42.5ms | ActiveRecord: 10.8ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 19:44:53 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 13ms (Views: 12.5ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 20:07:35 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.0ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 52ms (Views: 52.1ms | ActiveRecord: 22.3ms | Allocations: 4428)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 20:09:45 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 9ms (Views: 7.8ms | ActiveRecord: 1.2ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 20:09:57 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.9ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 14ms (Views: 13.1ms | ActiveRecord: 0.9ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 20:10:58 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 12ms (Views: 11.4ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 20:11:08 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 6ms (Views: 5.3ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 20:11:14 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 40ms (Views: 38.9ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 20:11:19 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 6ms (Views: 5.3ms | ActiveRecord: 0.4ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 20:11:21 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms | Allocations: 2348)
+
+
+Started GET "/airlines" for ::1 at 2021-03-23 20:11:40 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (1.3ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 14ms (Views: 12.1ms | ActiveRecord: 1.3ms | Allocations: 2348)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5461111228273612905)[0m
+  [1m[35m (78.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUsernameToUsers (20210324120057)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (204.7ms)[0m  [1m[35mALTER TABLE "users" ADD "username" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210324120057"]]
+  [1m[36mTRANSACTION (49.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (18.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5461111228273612905)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (40.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shed@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (82.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shedrach"], ["email", "shed@gmail.com"], ["password_digest", "$2a$12$9PVBN0ZhYnqGgEVI4s0UceQCivA.l8DGYiCVzBhjWrmSdaKbhmRGa"], ["created_at", "2021-03-24 12:05:02.533204"], ["updated_at", "2021-03-24 12:05:02.533204"], ["username", "sheddy"]]
+  [1m[36mTRANSACTION (72.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/auth/login" for ::1 at 2021-03-24 07:07:47 -0500
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"shed@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shed@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shed@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 692ms (Views: 0.3ms | ActiveRecord: 8.4ms | Allocations: 7588)
+
+
+Started POST "/auth/register" for ::1 at 2021-03-24 07:11:40 -0500
+  
+NameError (undefined local variable or method `username' for #<Class:0x00007fe6081361e0>):
+  
+app/models/user.rb:5:in `<class:User>'
+app/models/user.rb:2:in `<main>'
+Started POST "/auth/register" for ::1 at 2021-03-24 07:12:34 -0500
+  
+NameError (undefined local variable or method `username' for #<Class:0x00007fe60868e0c0>):
+  
+app/models/user.rb:5:in `<class:User>'
+app/models/user.rb:2:in `<main>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "willow@microverse.us"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "WillowM"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Willow Matta"], ["email", "willow@microverse.us"], ["password_digest", "$2a$12$JzbXiS2zA8xnlzTXRwbOJ.hZx/TdedAR.sfYBJpSGj0tbQEYlJnEW"], ["created_at", "2021-03-24 12:25:52.927352"], ["updated_at", "2021-03-24 12:25:52.927352"], ["username", "WillowM"]]
+  [1m[36mTRANSACTION (87.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/auth/register" for ::1 at 2021-03-24 07:27:09 -0500
+  [1m[35m (19.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#register as */*
+  Parameters: {"name"=>"Muhammad Fahad", "email"=>"fahad@gmail.us", "password"=>"[FILTERED]", "username"=>"willow", "user"=>{"name"=>"Muhammad Fahad", "email"=>"fahad@gmail.us", "username"=>"willow"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:19:in `register'
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "fahad@gmail.us"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `register'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "willow"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `register'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Muhammad Fahad"], ["email", "fahad@gmail.us"], ["password_digest", "$2a$12$jKvClqFzJKsiisGd0RvXsuAKQ/bGz6oCELqrlOL7Zvrss.baX.XDG"], ["created_at", "2021-03-24 12:27:10.550095"], ["updated_at", "2021-03-24 12:27:10.550095"], ["username", "willow"]]
+  ↳ app/controllers/users_controller.rb:19:in `register'
+  [1m[36mTRANSACTION (11.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:19:in `register'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `register'
+  [1m[36mUser Exists? (20.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "fahad@gmail.us"], ["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `register'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "willow"], ["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `register'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:20:in `register'
+Completed 201 Created in 390ms (Views: 0.3ms | ActiveRecord: 41.8ms | Allocations: 9679)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/auth/register" for ::1 at 2021-03-24 07:42:30 -0500
+Processing by UsersController#register as HTML
+  Parameters: {"name"=>"Sarah McDonalds", "email"=>"sarah1", "password"=>"[FILTERED]", "username"=>"sarah@gmail.com", "user"=>{"name"=>"Sarah McDonalds", "email"=>"sarah1", "username"=>"sarah@gmail.com"}}
+[31mUnpermitted parameter: :user[0m
+Started GET "/airlines" for ::1 at 2021-03-24 07:42:34 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:19:in `register'
+  [1m[36mUser Exists? (58.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sarah1"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `register'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "sarah@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `register'
+  [1m[36mAirline Load (158.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+  [1m[36mUser Create (178.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sarah McDonalds"], ["email", "sarah1"], ["password_digest", "$2a$12$V1Ul.y0zruhzE/KUSf7NV.cv2LqAuXDFx0jP5QXl8AnVyOs1Aehzy"], ["created_at", "2021-03-24 12:42:35.277686"], ["updated_at", "2021-03-24 12:42:35.277686"], ["username", "sarah@gmail.com"]]
+  ↳ app/controllers/users_controller.rb:19:in `register'
+  [1m[36mTRANSACTION (211.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:19:in `register'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `register'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "sarah1"], ["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `register'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "sarah@gmail.com"], ["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:20:in `register'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:20:in `register'
+Completed 201 Created in 5021ms (Views: 62.5ms | ActiveRecord: 2763.2ms | Allocations: 18196)
+
+
+Completed 201 Created in 1489ms (Views: 786.3ms | ActiveRecord: 598.0ms | Allocations: 21300)
+
+
+Started DELETE "/" for ::1 at 2021-03-24 07:43:13 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-24 07:43:49 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"sarah@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"sarah@gmail.com"}}
+Started GET "/airlines" for ::1 at 2021-03-24 07:43:49 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 9ms (Views: 7.6ms | ActiveRecord: 0.8ms | Allocations: 2585)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sarah@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 401 Unauthorized in 208ms (Views: 0.3ms | ActiveRecord: 7.7ms | Allocations: 5681)
+
+
+Started DELETE "/" for ::1 at 2021-03-24 07:43:55 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/login" for ::1 at 2021-03-24 07:44:09 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"sarah1", "password"=>"[FILTERED]", "user"=>{"email"=>"sarah1"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sarah1"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Started GET "/airlines" for ::1 at 2021-03-24 07:44:09 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sarah1"], ["LIMIT", 1]]
+  [1m[36mAirline Load (15.5ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 201 Created in 28ms (Views: 11.6ms | ActiveRecord: 15.5ms | Allocations: 2775)
+
+
+Completed 200 OK in 664ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 4295)
+
+
+Started DELETE "/" for ::1 at 2021-03-24 07:56:30 -0500
+  [1m[35m (12.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/register" for ::1 at 2021-03-24 07:59:16 -0500
+Started GET "/airlines" for ::1 at 2021-03-24 07:59:17 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#index as HTML
+  
+SyntaxError (/home/jamezjaz/Microverse_Projects/Air_Tickets_API/app/models/user.rb:11: syntax error, unexpected '\n', expecting =>):
+  
+app/models/user.rb:11: syntax error, unexpected '\n', expecting =>
+app/models/user.rb:11: syntax error, unexpected '\n', expecting =>
+  [1m[36mAirline Load (237.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 1646ms (Views: 205.3ms | ActiveRecord: 1122.8ms | Allocations: 101419)
+
+
+Started DELETE "/" for ::1 at 2021-03-24 08:02:37 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [DELETE] "/"):
+  
+Started POST "/auth/register" for ::1 at 2021-03-24 08:03:10 -0500
+  [1m[36mUser Load (126.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/auth/register" for ::1 at 2021-03-24 08:40:08 -0500
+  [1m[35m (471.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
