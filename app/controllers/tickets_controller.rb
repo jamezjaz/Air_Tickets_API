@@ -11,7 +11,7 @@ class TicketsController < ApplicationController
   def show
     ticket = Ticket.find_by(user_id: params[:id])
     if ticket
-      render json: ticket.airline, status: 201
+      render json: ticket, status: 201
     else
       render json: ticket.error, status: 400
     end
@@ -48,8 +48,12 @@ class TicketsController < ApplicationController
 
   # DELETE /tickets/1
   def destroy
-    @ticket.destroy
-    redirect_to tickets_url, notice: 'Ticket was successfully destroyed.'
+    ticket = Ticket.destroy_by(destroy_params)
+    if ticket
+      render json: 'Ticket was successfully destroyed!'
+    else
+      render json: ticket.error, status: unprocessable_entity
+    end
   end
 
   private
@@ -61,5 +65,9 @@ class TicketsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def ticket_params
       params.require(:ticket).permit(:airline_name, :username, :city, :date, :user_id, :airline_id)
+    end
+
+    def destroy_params
+      params.require(:ticket).permit(:user_id, :airline_id)
     end
 end
