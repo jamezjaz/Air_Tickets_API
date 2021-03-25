@@ -31,7 +31,7 @@ class TicketsController < ApplicationController
     ticket = Ticket.new(ticket_params)
 
     if ticket.save
-      render json: ticket.airline, status: 201, notice: 'Ticket was successfully created.'
+      render json: ticket, status: 201, notice: 'Ticket was successfully created.'
     else
       render json: ticket.errors, status: :unprocessable_entity
     end
