@@ -9424,3 +9424,167 @@ Completed 201 Created in 25ms (Views: 23.7ms | ActiveRecord: 0.5ms | Allocations
 Completed 201 Created in 107ms (Views: 0.4ms | ActiveRecord: 97.1ms | Allocations: 7599)
 
 
+Started POST "/auth/login" for ::1 at 2021-03-28 10:46:21 -0500
+Started GET "/airlines" for ::1 at 2021-03-28 10:46:24 -0500
+  [1m[35m (75.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#index as HTML
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+  [1m[36mAirline Load (156.0ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+  [1m[36mUser Load (50.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 201 Created in 1885ms (Views: 263.5ms | ActiveRecord: 849.3ms | Allocations: 21798)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 1727ms (Views: 0.7ms | ActiveRecord: 449.8ms | Allocations: 13861)
+
+
+Started POST "/auth/login" for ::1 at 2021-03-28 10:47:15 -0500
+Started GET "/airlines" for ::1 at 2021-03-28 10:47:16 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AirlinesController#index as HTML
+Processing by UsersController#login as HTML
+  Parameters: {"email"=>"jamezjaz@gmail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"jamezjaz@gmail.com"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+  [1m[36mAirline Load (0.8ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jamezjaz@gmail.com"], ["LIMIT", 1]]
+  ↳ app/auth/authenticate_user.rb:19:in `user'
+Completed 200 OK in 709ms (Views: 0.6ms | ActiveRecord: 11.3ms | Allocations: 8241)
+
+
+Completed 201 Created in 835ms (Views: 48.8ms | ActiveRecord: 699.6ms | Allocations: 22903)
+
+
+Started GET "/tickets" for ::1 at 2021-03-28 10:48:00 -0500
+Processing by TicketsController#index as HTML
+  [1m[36mTicket Load (16.7ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+  ↳ app/controllers/tickets_controller.rb:7:in `index'
+Completed 201 Created in 67ms (Views: 25.0ms | ActiveRecord: 22.7ms | Allocations: 9943)
+
+
+Started POST "/tickets" for ::1 at 2021-03-28 10:48:51 -0500
+Processing by TicketsController#create as HTML
+  Parameters: {"airline_name"=>"Fahad Airways", "username"=>"Fahad", "city"=>"Pakinstan", "date"=>"2021-07-20T15:48:00.000Z", "user_id"=>"", "ticket"=>{"airline_name"=>"Fahad Airways", "username"=>"Fahad", "city"=>"Pakinstan", "date"=>"2021-07-20T15:48:00.000Z", "user_id"=>""}}
+[31mUnpermitted parameter: :ticket[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tickets_controller.rb:33:in `create'
+  [1m[36mTicket Create (157.6ms)[0m  [1m[32mINSERT INTO "tickets" ("airline_name", "username", "city", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["airline_name", "Fahad Airways"], ["username", "Fahad"], ["city", "Pakinstan"], ["date", "2021-07-20 15:48:00"], ["created_at", "2021-03-28 15:48:51.189380"], ["updated_at", "2021-03-28 15:48:51.189380"]]
+  ↳ app/controllers/tickets_controller.rb:33:in `create'
+  [1m[36mTRANSACTION (782.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tickets_controller.rb:33:in `create'
+Completed 201 Created in 971ms (Views: 0.5ms | ActiveRecord: 940.5ms | Allocations: 2219)
+
+
+Started POST "/tickets" for ::1 at 2021-03-28 10:58:41 -0500
+Processing by TicketsController#create as */*
+  Parameters: {"airline_name"=>"Anything", "username"=>"Jazzzz", "city"=>"Pakinstan", "date"=>"28-03-2021", "user_id1"=>"1", "airline_id"=>"2"}
+[31mUnpermitted parameter: :user_id1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tickets_controller.rb:33:in `create'
+  [1m[36mTicket Create (1.3ms)[0m  [1m[32mINSERT INTO "tickets" ("airline_name", "username", "city", "date", "airline_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["airline_name", "Anything"], ["username", "Jazzzz"], ["city", "Pakinstan"], ["date", "2021-03-28 00:00:00"], ["airline_id", 2], ["created_at", "2021-03-28 15:58:51.016857"], ["updated_at", "2021-03-28 15:58:51.016857"]]
+  ↳ app/controllers/tickets_controller.rb:33:in `create'
+  [1m[36mTRANSACTION (179.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tickets_controller.rb:33:in `create'
+Completed 201 Created in 9315ms (Views: 26.1ms | ActiveRecord: 1626.5ms | Allocations: 3966)
+
+
+Started GET "/tickets" for ::1 at 2021-03-28 11:02:13 -0500
+Processing by TicketsController#index as HTML
+  [1m[36mTicket Load (1.0ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+  ↳ app/controllers/tickets_controller.rb:7:in `index'
+Completed 201 Created in 162ms (Views: 160.3ms | ActiveRecord: 1.0ms | Allocations: 5504)
+
+
+Started GET "/tickets" for ::1 at 2021-03-28 11:02:20 -0500
+Processing by TicketsController#index as HTML
+  [1m[36mTicket Load (0.6ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+  ↳ app/controllers/tickets_controller.rb:7:in `index'
+Completed 201 Created in 46ms (Views: 44.9ms | ActiveRecord: 0.6ms | Allocations: 5411)
+
+
+Started POST "/tickets" for ::1 at 2021-03-28 11:02:55 -0500
+Processing by TicketsController#create as HTML
+  Parameters: {"airline_name"=>"Old Ticket", "username"=>"Lena", "city"=>"Oslo, Sweden", "date"=>"2021-03-09T17:02:20.000Z", "user_id"=>"", "ticket"=>{"airline_name"=>"Old Ticket", "username"=>"Lena", "city"=>"Oslo, Sweden", "date"=>"2021-03-09T17:02:20.000Z", "user_id"=>""}}
+[31mUnpermitted parameter: :ticket[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tickets_controller.rb:33:in `create'
+  [1m[36mTicket Create (0.7ms)[0m  [1m[32mINSERT INTO "tickets" ("airline_name", "username", "city", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["airline_name", "Old Ticket"], ["username", "Lena"], ["city", "Oslo, Sweden"], ["date", "2021-03-09 17:02:20"], ["created_at", "2021-03-28 16:02:55.501307"], ["updated_at", "2021-03-28 16:02:55.501307"]]
+  ↳ app/controllers/tickets_controller.rb:33:in `create'
+  [1m[36mTRANSACTION (163.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tickets_controller.rb:33:in `create'
+Completed 201 Created in 208ms (Views: 0.4ms | ActiveRecord: 164.0ms | Allocations: 1977)
+
+
+Started GET "/tickets" for ::1 at 2021-03-28 11:04:50 -0500
+Processing by TicketsController#index as HTML
+  [1m[36mTicket Load (0.6ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+  ↳ app/controllers/tickets_controller.rb:7:in `index'
+Completed 201 Created in 29ms (Views: 25.9ms | ActiveRecord: 0.6ms | Allocations: 5518)
+
+
+Started GET "/airlines" for ::1 at 2021-03-28 11:04:54 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (29.2ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 100ms (Views: 69.9ms | ActiveRecord: 29.2ms | Allocations: 2105)
+
+
+Started GET "/airlines" for ::1 at 2021-03-28 11:04:57 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (0.4ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 11ms (Views: 9.8ms | ActiveRecord: 0.4ms | Allocations: 2059)
+
+
+Started GET "/tickets" for ::1 at 2021-03-28 11:05:05 -0500
+Processing by TicketsController#index as HTML
+  [1m[36mTicket Load (0.6ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+  ↳ app/controllers/tickets_controller.rb:7:in `index'
+Completed 201 Created in 36ms (Views: 34.3ms | ActiveRecord: 0.6ms | Allocations: 5518)
+
+
+Started POST "/tickets" for ::1 at 2021-03-28 11:05:18 -0500
+Processing by TicketsController#create as HTML
+  Parameters: {"airline_name"=>"Kizito Tech3", "username"=>"Jay", "city"=>"Toronto, Ca", "date"=>"2021-03-28T16:05:05.375Z", "user_id"=>"", "ticket"=>{"airline_name"=>"Kizito Tech3", "username"=>"Jay", "city"=>"Toronto, Ca", "date"=>"2021-03-28T16:05:05.375Z", "user_id"=>""}}
+[31mUnpermitted parameter: :ticket[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tickets_controller.rb:33:in `create'
+  [1m[36mTicket Create (1.4ms)[0m  [1m[32mINSERT INTO "tickets" ("airline_name", "username", "city", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["airline_name", "Kizito Tech3"], ["username", "Jay"], ["city", "Toronto, Ca"], ["date", "2021-03-28 16:05:05.375000"], ["created_at", "2021-03-28 16:05:18.688416"], ["updated_at", "2021-03-28 16:05:18.688416"]]
+  ↳ app/controllers/tickets_controller.rb:33:in `create'
+  [1m[36mTRANSACTION (79.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tickets_controller.rb:33:in `create'
+Completed 201 Created in 94ms (Views: 1.3ms | ActiveRecord: 82.0ms | Allocations: 1978)
+
+
+Started GET "/airlines" for ::1 at 2021-03-28 11:07:15 -0500
+Processing by AirlinesController#index as HTML
+  [1m[36mAirline Load (8.0ms)[0m  [1m[34mSELECT "airlines".* FROM "airlines"[0m
+  ↳ app/controllers/airlines_controller.rb:4:in `index'
+Completed 201 Created in 38ms (Views: 29.2ms | ActiveRecord: 8.0ms | Allocations: 2059)
+
+
+Started GET "/tickets" for ::1 at 2021-03-28 11:07:22 -0500
+Processing by TicketsController#index as HTML
+  [1m[36mTicket Load (0.6ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets"[0m
+  ↳ app/controllers/tickets_controller.rb:7:in `index'
+Completed 201 Created in 33ms (Views: 31.2ms | ActiveRecord: 0.6ms | Allocations: 5649)
+
+
+Started POST "/tickets" for ::1 at 2021-03-28 11:07:35 -0500
+Processing by TicketsController#create as HTML
+  Parameters: {"airline_name"=>"Jaz Airways3", "username"=>"jamezjaz", "city"=>"Abuja, Nigeria", "date"=>"2021-03-28T16:07:22.699Z", "user_id"=>"", "ticket"=>{"airline_name"=>"Jaz Airways3", "username"=>"jamezjaz", "city"=>"Abuja, Nigeria", "date"=>"2021-03-28T16:07:22.699Z", "user_id"=>""}}
+[31mUnpermitted parameter: :ticket[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tickets_controller.rb:33:in `create'
+  [1m[36mTicket Create (1.4ms)[0m  [1m[32mINSERT INTO "tickets" ("airline_name", "username", "city", "date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["airline_name", "Jaz Airways3"], ["username", "jamezjaz"], ["city", "Abuja, Nigeria"], ["date", "2021-03-28 16:07:22.699000"], ["created_at", "2021-03-28 16:07:35.887624"], ["updated_at", "2021-03-28 16:07:35.887624"]]
+  ↳ app/controllers/tickets_controller.rb:33:in `create'
+  [1m[36mTRANSACTION (116.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tickets_controller.rb:33:in `create'
+Completed 201 Created in 186ms (Views: 0.6ms | ActiveRecord: 117.7ms | Allocations: 1987)
+
+
