@@ -3,7 +3,7 @@ class User < ApplicationRecord
   has_many :airlines
   has_many :tickets
 
-  validates_presence_of :name, :email, :password_digest, :username, length: { minimum: 3 }
+  validates_presence_of :name, :email, :username, length: { minimum: 3 }
   validates :email, uniqueness: true
   validates :username, uniqueness: { case_sensitive: false }
 
