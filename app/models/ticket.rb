@@ -1,4 +1,4 @@
 class Ticket < ApplicationRecord
   belongs_to :user
-  belongs_to :airlines
+  belongs_to :airline
 end
