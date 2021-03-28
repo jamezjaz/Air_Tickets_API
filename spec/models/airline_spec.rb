@@ -1,7 +1,15 @@
+# rubocop:disable Style/BlockDelimiters, Layout/MultilineMethodCallBraceLayout
+
 require 'rails_helper'
 
 RSpec.describe Airline, type: :model do
-  subject { Airline.new(name: 'Air Peace', price: '$750.45', location: 'Lagos, Nigeria', description: 'One of 5 top airlines in Nigeria, 2018')}
+  subject {
+    Airline.new(
+      name: 'Air Peace',
+      price: '$750.45',
+      location: 'Lagos, Nigeria',
+      description: 'One of 5 top airlines in Nigeria, 2018')
+  }
 
   before { subject.save }
 
@@ -47,3 +55,5 @@ RSpec.describe Airline, type: :model do
     end
   end
 end
+
+# rubocop:enable Style/BlockDelimiters, Layout/MultilineMethodCallBraceLayout

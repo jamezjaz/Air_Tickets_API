@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  #Validations
+  # Validations
   has_many :airlines
   has_many :tickets
 
@@ -7,9 +7,9 @@ class User < ApplicationRecord
   validates :email, uniqueness: true
   validates :username, uniqueness: { case_sensitive: false }
 
-  validates :password, :presence => true, :length => { :within => 6..40 }
+  validates :password, presence: true, length: { within: 6..40 }
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
 
-  #encrypt password
+  # encrypt password
   has_secure_password
 end

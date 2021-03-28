@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  subject { User.new(name: 'James Odufu', email: 'jamezjaz@gmail.com', username: 'Jamezjaz')}
+  subject { User.new(name: 'James Odufu', email: 'jamezjaz@gmail.com', username: 'Jamezjaz') }
 
   before { subject.save }
 
@@ -31,17 +31,17 @@ RSpec.describe User, type: :model do
       expect(subject).to_not be_valid
     end
 
-    it 'password should not be too short' do 
+    it 'password should not be too short' do
       subject.password = 'asdf'
       expect(subject).to_not be_valid
     end
 
-    it 'password should not be too long' do 
+    it 'password should not be too long' do
       subject.password = 'a' * 41
       expect(subject).to_not be_valid
     end
 
-    it 'email should allow valid values' do 
+    it 'email should allow valid values' do
       subject.email = 'jaz.gmail.com'
       expect(subject).to_not be_valid
     end
