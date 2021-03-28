@@ -8,4 +8,8 @@ describe 'registration routes' do
   it 'should route to user\s login' do
     expect(post('auth/login')).to route_to('users#login')
   end
+
+  it 'should route to list of all users' do
+    expect(get('users')).to route_to('users#index')
+  end
 end
