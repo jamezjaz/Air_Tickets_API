@@ -48,11 +48,13 @@ class TicketsController < ApplicationController
 
   # DELETE /tickets/1
   def destroy
-    ticket = Ticket.destroy_by(destroy_params)
-    if ticket
+    ticket_id = Ticket.find(params[:id])
+    ticket_id.destroy
+
+    if ticket_id.destroy
       render json: 'Ticket was successfully destroyed!'
     else
-      render json: ticket.error, status: unprocessable_entity
+      render json: ticket_id.error, status: unprocessable_entity
     end
   end
 
@@ -68,7 +70,7 @@ class TicketsController < ApplicationController
     params.permit(:airline_name, :username, :city, :date, :user_id, :airline_id)
   end
 
-  def destroy_params
-    params.require(:ticket).permit(:user_id, :airline_id)
-  end
+  # def destroy_params
+  #   params.permit(:user_id, :airline_id)
+  # end
 end
