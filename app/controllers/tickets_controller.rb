@@ -9,7 +9,7 @@ class TicketsController < ApplicationController
 
   # GET /tickets/1
   def show
-    ticket = Ticket.find_by(user_id: params[:id])
+    ticket = Ticket.find(params[:id])
     if ticket
       render json: ticket, status: 201
     else
