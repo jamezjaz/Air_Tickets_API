@@ -1,3 +1,5 @@
+# rubocop:disable Style/UnlessElse
+
 class UsersController < ApplicationController
   before_action :authenticate_request, except: %i[login register]
 
@@ -29,15 +31,17 @@ class UsersController < ApplicationController
   private
 
   def authenticate(email, password)
-    command = AuthenticateUser.call(email, password)
+    command = AuthenticateUser.new(email, password)
+    command = command.call
 
-    if command.success?
+    unless command[:authenticate_errors]
       render json: {
-        access_token: command.result,
+        access_token: command[:token],
+        user: command[:user],
         message: 'Login Successful'
       }
     else
-      render json: { error: command.errors }, status: :unauthorized
+      render json: { error: command[:authenticate_errors] }, status: :unauthorized
     end
   end
 
@@ -50,3 +54,5 @@ class UsersController < ApplicationController
     )
   end
 end
+
+# rubocop:enable Style/UnlessElse

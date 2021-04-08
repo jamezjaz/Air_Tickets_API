@@ -1,7 +1,7 @@
 # rubocop:disable Style/SafeNavigation
 
 class AuthenticateUser
-  prepend SimpleCommand
+  # prepend SimpleCommand
   attr_accessor :email, :password
 
   # this is where parameters are taken when the command is called
@@ -12,7 +12,10 @@ class AuthenticateUser
 
   # this is where the result gets returned
   def call
-    JsonWebToken.encode(user_id: user.id) if user
+    return user if user[:authenticate_errors]
+
+    json_web_token = { token: JsonWebToken.encode(user_id: user.id), user: user }
+    json_web_token
   end
 
   private
@@ -21,8 +24,7 @@ class AuthenticateUser
     user = User.find_by_email(email)
     return user if user && user.authenticate(password)
 
-    errors.add :user_authentication, 'Invalid credentials'
-    nil
+    { authenticate_errors: { user_authentication: 'Invalid credentials' } }
   end
 end
 
