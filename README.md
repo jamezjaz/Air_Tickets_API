@@ -79,6 +79,7 @@ GET | airlines | False | Fetch all airlines
 GET | airlines/:id | False | Fetch a details of a specific airline
 POST | tickets | False | Book a ticket
 GET | tickets | False | Fetch booked tickets
+DELETE | tickets/:id | False | User deletes ticket's details
 
 
 ## Deployment
