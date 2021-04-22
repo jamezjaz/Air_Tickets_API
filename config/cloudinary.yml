@@ -1,0 +1,9 @@
+development:
+  cloud_name: "jamezjaz"
+  api_key: "197938333991863"
+  api_secret: "m_F8rQHOCjtqX9yk4ekyARFLY_o"
+
+production:
+  cloud_name: "jamezjaz"
+  api_key: "197938333991863"
+  api_secret: "m_F8rQHOCjtqX9yk4ekyARFLY_o"
