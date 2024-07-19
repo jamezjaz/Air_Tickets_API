@@ -89,6 +89,6 @@ production:
   <<: *default
   database: air_tickets_api_production
   username: <%= ENV.fetch("DATABASE_USERNAME", "air_tickets_api_prod_user") %>
-  password: <%= ENV.fetch("AIR_TICKETS_API_DATABASE_PASSWORD", "007jand9000") %>
+  password: <%= ENV.fetch("AIR_TICKETS_API_DATABASE_PASSWORD", "NGJjGteRk2o93HOMFC84qG3BNyOeD0AS") %>
   host: <%= ENV.fetch("DATABASE_HOST", "dpg-cqddt41u0jms738nmg30-a") %>
   port: <%= ENV.fetch("DATABASE_PORT", 5432) %>
